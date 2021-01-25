@@ -1,0 +1,27 @@
+* li {
+    list-style: none;
+}
+* {
+    outline: none;
+}
+
+.temp-font {
+    font-size: .8em;
+}
+
+.loader {
+    filter: $loader-color;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 75px;
+    opacity: .8;
+}
+.page-loader {
+    width: 75px;
+    filter: $loader-color;
+}
+.disabled {
+    pointer-events: none;
+    opacity: .6;
+}

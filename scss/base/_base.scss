@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $prim-font;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @include size(100%, 100%);
+    background: rgb(230, 235, 236);
+    color: $font-color;
+
+    // temporary
+    @include flex(row, nowrap, center, center);
+}
+
+.auto-order-container {
+    width: 100%;
+    max-width: 475px;
+    margin: 0 auto;
+}

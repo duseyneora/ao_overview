@@ -1,0 +1,95 @@
+.auto-order-overview {
+    padding: 25px 20px;
+        & .header {
+            margin-bottom: 25px;
+            & h4 {
+                color: black;
+                font-weight: 400;
+                font-size: 1.1em;
+            }
+                
+            @include flex(row, nowrap, space-between, center);
+                & button {
+                    height: 35px;
+                    width: 75px;
+                }
+        }
+}
+
+.product-card {
+    @include size($card-size, 100%);
+    background: white;
+    border-radius: 5px;
+    @include flex(row, nowrap, flex-start, center);
+    margin: -30px auto 5px auto;
+    transition: $t3;   
+    border-left: 4px solid transparent;
+    cursor: default;
+    position: relative;
+    animation: productSlide .6s .2s ease forwards;
+    opacity: 0;
+    overflow: hidden;
+    &:hover {
+        // background: rgb(250, 250, 250);
+        transform: scale(1.02);
+    }
+    & .outofstock-icon {
+        color: $happiness-orange;
+        font-size: 1em;
+        margin-left: 5px;
+    }
+    &.outofstock-card {
+        // opacity: .7!important;
+        border-color: rgba($happiness-orange, 0.5);
+    }
+    & .card-child {
+        @include simpleSize(100%);
+        font-size: .9em;
+    }
+    & .img-container {
+        max-width: $card-size;
+        min-width: $card-size;
+        @include flex(row, nowrap, center, center);
+        padding: 5px;
+            & img {
+                display: inline;
+                height: 100%;
+        }
+    }
+    & .name-and-qty {
+        @include flex(column, nowrap, space-between, flex-start);
+        padding: 10px;
+        font-size: .7em;
+        color: rgb(59, 63, 68);
+    & .product-name-copy {
+        font-size: 1.4em;
+        font-weight: 400;
+
+    }
+    & .qty-copy {
+        font-size: 1.2em;
+    }
+    & .qty-amount {
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+    }
+    & .price {
+        @include flex(column, nowrap, space-between, flex-end);
+        padding: 10px;
+        max-width: 50px;
+        min-width: 50px;
+        color: rgba(61, 64, 68, 0.945);
+    & .price-copy {
+        font-size: 1.2em;
+        font-weight: 600;
+        padding-right: 5px;
+    }
+    & .outofstock-copy {
+        color: $happiness-orange;
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+    }
+}
+}

@@ -1,0 +1,56 @@
+.ao-overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(67, 77, 90, 0.534);
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: $t3;
+        &.flex-overlay {
+            @include flex(column, nowrap, center, center);
+        }
+        &.active {
+            pointer-events: auto;
+            opacity: 1;
+        }
+        &.general {
+            background: rgba(0, 0, 0, 0.35);
+        }
+        & .alert-message {
+            @include absoluteCenter;
+            position: fixed;
+            top: -50px;
+            margin: auto;
+            @include size(100px, 90%);
+            opacity: 0;
+            pointer-events: none;
+            transition: $t3;
+            border-radius: 10px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+            @include flex(row, nowrap, space-around, center);
+            color: white;
+            z-index: 10;
+                & i {
+                    margin-left: auto;
+                    margin-right: 15px;
+                    font-size: 2em;
+                }
+                & p {
+                    font-size: 1em;
+                    margin-right: auto;
+                }
+                &.success {
+                    background: rgb(68, 212, 157);
+                    top: 75px;
+                    opacity: 1; 
+                }
+                &.error {
+                    background: rgb(247, 120, 126);
+                    top: 75px;
+                    opacity: 1;
+                }
+        }
+}

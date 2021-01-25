@@ -1,0 +1,67 @@
+.auto-order-settings {
+    padding: 25px 20px;
+    transition: $t3;
+        &.margin-space {
+            margin-bottom: 400px;
+        }
+        & .header {
+            margin-bottom: 25px;
+            @include flex(row, nowrap, space-between, center);
+            cursor: pointer;
+            
+            & i {
+                margin-right: 15px;
+                transition: $t3;
+                &.active {
+                    transform: rotate(-180deg);
+                }
+            }
+            & h4 {
+                color: black;
+                font-weight: 400;
+                font-size: 1.1em;
+            }
+        }
+        
+}
+.ao-settings-card-container {
+    border-radius: 5px;
+    overflow: hidden;
+    transition: margin .4s, opacity .3s;
+    &.hide {
+        margin-top: -20px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    & .card {
+        @include size(100px, 100%);
+        background: white;
+        transition: $t3;
+        @include flex(row, nowrap, space-between, center);
+        padding: 15px;
+        &:nth-child(even) {
+            border-bottom: 1px solid rgba($ash-gray, 0.2);
+            border-top: 1px solid rgba($ash-gray, 0.2);
+        }
+        & .group {
+            @include flex(column, nowrap, space-between, flex-start);
+            height: 100%;
+            &.half {
+                height: 50%;
+            }
+            & p {
+                margin-top: 10px;
+                font-size: .8em;
+                color: gray;
+            }
+        }
+        &.shrink {
+            height: 0;
+        }
+        & button {
+            height: 35px;
+            width: 75px;
+        }
+            
+    }
+}

@@ -1,0 +1,35 @@
+/* marketing banner container */
+
+
+.marketing-banner {
+    @include size(auto, 100%);
+        & .carousel-container {
+            @include size(120px, 100%);
+            position: relative;
+            background: $bg-main;
+                & .controls {
+                    @include absoluteCenter;
+                    @include size(30px, 100%);
+                    @include flex(row, nowrap, space-between, center);
+                    padding: 10px;
+                        & p {
+                            padding: 10px;
+                            border-radius: 5px;
+                            color: $ash-gray;
+                            transition: $t3;
+                            opacity: 0.8;
+                            cursor: pointer;
+                            font-size:1.2em;
+                                &:hover {
+                                    background: rgba(darken($ash-gray, 15), 0.5);
+                                    color: white;
+                                    opacity: 1;
+                                }
+                        }
+                }
+        }
+        & .carousel-content {
+            @include flex(row, nowrap, center, center);
+            @include size(100%, 100%);
+        }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font import *Source Sans Pro 3, 4, 6, and 7 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- icon import -->
+    <script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
+
+    <!-- custom compiled CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- title -->
+    <title>Prototype | User Dashboard</title>
+</head>
+<body>
+
+    <!-----------------------------------------
+                  OVERLAY CONTENT  
+    ------------------------------------------>
+    <div class="ao-overlay-container">
+        <div class="alert-message">
+            <!-- ... -->
+        </div>
+    </div> 
+    <!-----------------------------------------
+                END OVERLAY CONTENT 
+    ------------------------------------------>
+
+
+
+
+
+    <!-----------------------------------------
+                  MAIN CONTAINER
+    ------------------------------------------>
+
+    <main class="auto-order-container">
+
+
+         <!-- marketing content -->
+        <div class="marketing-banners-container">
+
+            <!-- offer-banner -->
+            <div class="marketing-banner">
+                <div class="carousel-container">
+                    <!-- controls -->
+                    <div class="controls">
+                        <p class="prev"><i class="fas fa-chevron-left"></i></p>
+                        <p class="next"><i class="fas fa-chevron-right"></i></p>
+                    </div>
+                    <!-- dots -->
+                    <div class="dots">
+                        <!-- ... -->
+                    </div>
+
+                    <!-- content -->
+                    <div class="carousel-content">
+                        <p class="temp-font">marketing content</p>
+                    </div>
+                </div>
+            </div> <!-- offer-banner -->
+
+        </div> 
+        <!-- END marketing content -->
+
+        <!-- user dashboard -->
+        <div class="user-dashboard">
+            <div class="user-info-container">
+                <div class="user-picture-and-name">
+                    <img src="" alt="placeholder image for current user">
+                    <p class="name">...</p>
+                </div>
+                <div class="user-id">
+                    <p>...</p>
+                </div>
+            </div>
+            <div class="ao-select-container">
+                <p class="auto-order-count">Choose Your Order <span class="count">...</span></p>
+                <div class="custom-select-container">
+                    <p class="select-active-option">Loading order list...</p>
+                    <i class="fas fa-angle-down select-arrow"></i>
+                    <!-- menu -->
+                    <div class="menu-box">
+                        <ul class="auto-order-selections">
+
+                        </ul>
+                    </div>
+                    <!-- / menu -->
+                </div>
+            </div>
+        </div>
+        <!-- END user dashboard -->
+
+        <!-- current order overview -->
+        <div class="auto-order-overview">
+            <div class="header">
+                <h4>Products</h4>
+                <button class="btn-link round2 default">Edit</button>
+            </div>
+
+            <div class="current-products-container">
+                <!-- ... -->
+            </div>
+        </div>
+        <!-- END current order overview -->
+
+        <!-- order settings -->
+        <div class="auto-order-settings">
+            <div class="header">
+                <h4>Auto Order Settings</h4>
+                <i class="fas active fa-angle-down select-arrow"></i>
+            </div>
+            <div class="ao-settings-card-container hide">
+                <div class="card shrink">
+                    <div class="group">
+                        <h4>Your Next Ship Date</h4>
+                        <p class="ship-date-copy">Monday, Jan 18</p>
+                        <p><span class="bold">Frequency</span> is set for <span class="bold">every month</span></p>
+                    </div>
+                    <button class="btn-link round2 default">Edit</button>
+                </div>
+                <div class="card shrink">
+                    <div class="group half">
+                        <h4>Shipping Address</h4>
+                        <p class="shipping-address-copy">1234 Test Lane, Addison, TX 75001</p>
+                    </div>
+                    <button class="btn-link round2 default">Edit</button>
+                </div>
+                <div class="card shrink">
+                    <div class="group half">
+                        <h4>Payment Method</h4>
+                        <p class="payment-method-copy">
+                            Mastercard ending in 1111
+                        </p>
+                    </div>
+                    <button class="btn-link round2 default">Edit</button>
+                </div>
+            </div>
+            <button class="coupon-btn">Have a coupon or promo code?</button>
+            <form class="coupon-input-container">
+                <input type="text">
+                <button type="submit" class="default btn-link round2">Apply</button>
+            </form>
+        </div>
+        <!-- END order settings -->
+
+        <!-- price footer -->
+        <div class="price-footer">
+            <div class="price-header">
+                <p><span class="bolder">TOTAL</span>(USD)</p>
+                <p class="bolder total-price-display-text">$XX.00 <i class="fas fa-chevron-down"></i></p>
+            </div>
+        </div>
+        <!-- END price footer -->
+
+
+
+    </main>
+    <!-- END main -->
+    
+    <!-----------------------------------------
+                  END MAIN CONTAINER  
+    ------------------------------------------>
+    <script src="./js/product-data.js"></script>
+    <script src="./js/user-data.js"></script>
+    <script src="./js/func.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
