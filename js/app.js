@@ -197,7 +197,7 @@ createNew.addEventListener('click', () => {
     overlay.innerHTML = '<img class="page-loader" src="./assets/loaders/GLdqYB2.gif">';
     //load to next route
     setTimeout(() => {
-        window.location.href = '../routes/create-new/create-new.html';
+        window.location.href = '../routes/create-new/index.html';
     }, 2000)
     
 });
