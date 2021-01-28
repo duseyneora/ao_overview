@@ -1,4 +1,4 @@
-.user-dashboard {
+.auto-order-container .user-dashboard {
     padding: 20px;
     background: $main-color;
     background-image: linear-gradient(rgba(77, 131, 175, 0.493), rgba(123, 123, 156, 0.596)), url(../assets/dash-walls/wall1.jpg);
@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
 }
 
-.user-info-container {
+.auto-order-container .user-info-container {
     color: white;
     @include flex(row, nowrap, space-between, center);
         // user picture and name
@@ -31,7 +31,7 @@
 }
 
 
-.ao-select-container {
+.auto-order-container .ao-select-container {
     margin: 5px auto 0px;
     @include flex(column, nowrap, flex-end, flex-end);
         & .auto-order-count {

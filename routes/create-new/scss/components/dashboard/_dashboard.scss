@@ -1,0 +1,137 @@
+.auto-order-container .user-dashboard {
+    padding: 20px;
+    background: $main-color;
+    background-image: linear-gradient(rgba(77, 131, 175, 0.493), rgba(123, 123, 156, 0.596)), url(../assets/dash-walls/wall1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.auto-order-container .user-info-container {
+    color: white;
+    @include flex(row, nowrap, space-between, center);
+        // user picture and name
+        & .user-picture-and-name {
+            @include flex(row, nowrap, flex-start, center);
+            width: 100%;
+            max-width: 200px;
+            & img {
+                width: 50px;
+                margin-right: 10px;
+            }
+            & .name {
+                font-weight: 700;
+                font-size: 1.1em;
+                letter-spacing: 1px;
+            }
+        }
+        // user id
+        & .user-id {
+            font-size: .8em;
+        }
+}
+
+
+.auto-order-container .ao-select-container {
+    margin: 5px auto 0px;
+    @include flex(column, nowrap, flex-end, flex-end);
+        & .auto-order-count {
+            color: white;
+            font-size: .8em;
+            @include flex(row, nowrap, center, center);
+                & .count {
+                    background: $main-color-accent;
+                    background: darken($main-color-accent, 10%);
+                    @include simpleSize(30px);
+                    margin: 10px auto 5px 10px;
+                    @include flex(row, nowrap, center, center);
+                    border-radius: 50%;
+                    font-size: 1.1em;
+                }
+        }
+        & .custom-select-container {
+            background: white;
+            @include size(40px, 100%);
+            @include flex(row, nowrap, space-between, center);
+            margin: 5px auto;
+            padding: $default-padding;
+            position: relative;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: $t3;
+                & .viewing-order {
+                    color: $main-color-accent;
+                    opacity: 0.6;
+                    margin-right: 10px;
+                }
+                & .select-arrow {
+                    transition: $t3;
+                        &.active {
+                            transform: rotate(-180deg);
+                        }
+                }
+
+                & .menu-box {
+                    position: absolute;
+                    width: 100%;
+                    background: white;
+                    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+                    top: 0px;
+                    left: 0;
+                    padding: 10px;
+                    transition: $t3;
+                    opacity: 0;
+                    pointer-events: none;
+                    border-radius: 3px;
+                    z-index: 10;
+                        &.active {
+                            pointer-events: auto;
+                            opacity: 1;
+                            top: 42px;
+                        }
+                }
+                & li {
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    transition: $t3;
+                    font-size: .9em;
+                    @include flex(row, nowrap, space-between, center);
+                        & .product-count {
+                            display: block;
+                            @include simpleSize(25px);
+                            @include flex(row, nowrap, center, center);
+                            background: rgba($main-color-accent, 0.5);
+                            border-radius: 3px;
+                            color: white;
+                            transition: $t3;
+                            font-size: .8em;
+                        }
+                        &.create-new {
+                            text-align: center;
+                            padding: 10px;
+                            background: lighten($main-color-accent, 5%);
+                            width: 100%;
+                            color: white;
+                            margin: 10px auto 0 auto;
+                            border-radius: 25px;
+                                &:hover {
+                                    background: $main-color-accent;
+                                   
+                                }
+                                & p {
+                                    text-align: center;
+                                    width: 100%;
+                                
+                                }
+                        }
+                        
+                        &:hover {
+                            background: rgb(241, 241, 241);
+                                & .product-count {
+                                    background: $main-color-accent;
+                                }
+                        }
+                }
+        }
+}

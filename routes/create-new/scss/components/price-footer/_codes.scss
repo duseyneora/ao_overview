@@ -1,0 +1,57 @@
+.auto-order-settings {
+& .coupon-btn {
+    background: transparent;
+    text-decoration: underline;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 400;
+        &:hover {
+            color: black;
+        }
+}
+& .coupon-input-container {
+    margin: 15px auto 50px;
+    margin-top: -10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: $t3;
+    position: relative;
+    @include flex(row, nowrap, space-between, center);
+        &.active {
+            opacity: 1;
+            pointer-events: auto;
+            margin-top: 15px;
+        }
+        & input {
+            padding: 9px 15px;
+            border-radius: 0;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border: 1px solid transparent;
+            outline: none;
+            width: 100%;
+        }
+        & button {
+            margin: auto 15px auto 0;
+            padding: 7px 15px;
+            height: 35px;
+            min-width: 75px;
+            border-radius: 0;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border: 1px solid transparent;
+            border-left-color: rgb(209, 209, 209);
+            transition: $t3;
+            background-color: $main-color-accent;
+            color: white;
+            font-weight: 400;
+            letter-spacing: 1px;
+                &:hover {
+                    background-color: lighten($main-color-accent,5%);
+
+                }
+        }
+    }
+}

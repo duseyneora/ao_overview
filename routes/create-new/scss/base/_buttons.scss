@@ -1,0 +1,13 @@
+button {
+    border-radius: 25px;
+    border: 1px solid $ash-gray;
+    color: $ash-gray;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    background: white;
+        &:hover {
+            background: $ash-gray;
+            color: white;
+        }
+}

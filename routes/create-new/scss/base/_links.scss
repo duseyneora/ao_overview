@@ -1,0 +1,41 @@
+.btn-link {
+    padding: 5px 15px;
+    outline: none;
+    text-decoration: none;
+    // margin: 5px auto;
+    display: block;
+    border: 1px solid;
+    text-align: center;
+    transition: $t3;
+    cursor: pointer;
+        &.round1 {
+            border-radius: 5px; 
+        }
+        &.round2 {
+            border-radius: 25px;
+        }
+
+
+        // button theme
+
+        // default
+        &.default {
+            background: white;
+            border-color: $ash-gray;
+            color: $ash-gray;
+            font-weight: 600;
+                &:hover {
+                    background: $ash-gray;
+                    color: white;
+                }
+
+                &.cta {
+                    background: $ash-gray;
+                    border-color: $ash-gray;
+                    color: white;
+                        &:hover {
+                            background: darken($ash-gray, 5%);
+                        }
+                }
+        }
+}

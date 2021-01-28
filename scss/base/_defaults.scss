@@ -5,11 +5,11 @@
     outline: none;
 }
 
-.temp-font {
+.auto-order-container .temp-font {
     font-size: .8em;
 }
 
-.loader {
+.auto-order-container .loader {
     filter: $loader-color;
     display: block;
     margin: 0 auto;
@@ -17,11 +17,11 @@
     max-width: 75px;
     opacity: .8;
 }
-.page-loader {
+.ao-overlay-container .page-loader {
     width: 75px;
     filter: $loader-color;
 }
-.disabled {
+.auto-order-container .disabled {
     pointer-events: none;
     opacity: .6;
 }

@@ -1,0 +1,60 @@
+.auto-order-container .filter-container {
+    width: 95%;
+    max-width: 475px;
+    margin: 10px auto;
+    border: 1px solid rgba($ash-gray, .5);
+    border-radius: 3px;
+    background: white;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+        &:hover {
+            color: $main-color-accent;
+        }
+        & .filter-select-menu-container {
+            @include flex(row, nowrap, space-between, center);
+            padding: 10px 15px;;
+                & i {
+                    font-size: .8em;
+                    transition: .3s;
+                        &.spin {
+                            transform: rotate(180deg);
+                        }
+                }
+        }
+        & .product-group-dropdown {
+            @include size(0px, 100%);
+            position: absolute;
+            top: 0px;
+            left: 0;
+            background: white;
+            border: 1px solid rgba($ash-gray, .5);
+            border-radius: 3px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+            transition: .3s;
+            opacity: 0;
+            pointer-events: none;
+                &.active {
+                    opacity: 1;
+                    pointer-events: auto;
+                    top: 43px;
+                    height: 200px;
+                }
+        }
+        & .product-group-dropdown {
+            padding: 10px;
+            z-index: 10;
+                & li {
+                    @include flex(row, nowrap, flex-start, center);
+                    margin: 5px auto;
+                    transition: .3s;
+                    padding: 10px;
+                    border-radius: 3px;
+                        &:hover {
+                            background: rgb(243, 241, 241);
+                        }
+                }
+        }
+}
+
+

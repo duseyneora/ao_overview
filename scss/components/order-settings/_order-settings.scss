@@ -1,4 +1,4 @@
-.auto-order-settings {
+.auto-order-container .auto-order-settings {
     padding: 25px 20px;
     transition: $t3;
         &.margin-space {
@@ -24,7 +24,7 @@
         }
         
 }
-.ao-settings-card-container {
+.auto-order-container .ao-settings-card-container {
     border-radius: 5px;
     overflow: hidden;
     transition: margin .4s, opacity .3s;

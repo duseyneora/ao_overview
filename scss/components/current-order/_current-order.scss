@@ -16,7 +16,7 @@
         }
 }
 
-.product-card {
+.auto-order-container .product-card {
     @include size($card-size, 100%);
     background: white;
     border-radius: 5px;

@@ -1,0 +1,163 @@
+.auto-order-container .product-catalog-content {
+    padding: 10px 15px;
+    margin-bottom: 50px;
+        & .hide {
+            display: none;
+        }
+        & h2, & h3 {
+            font-size: .9em;
+        }
+        & h3 {
+            margin: 20px auto;
+        }
+        & h2.all-products-title {
+            text-align: center;
+            color: rgba($ash-gray, 0.5);
+            margin-bottom: 15px;
+        }
+        & .product-catalog-container-content {
+            @include flex(row, wrap, space-evenly, center);
+            
+        }
+        & .pls {
+            // product line section
+            @include flex(row, wrap, space-evenly, center);
+                
+        }
+    }
+        
+    
+
+    .auto-order-container .product-catalog-card {
+        margin: 10px 5px;
+        background: white;
+        border-radius: 5px;
+        transition: $t3;
+        flex-grow: 1;
+        width: 100%;
+        // max-width: 300px;
+        position: relative;
+        border: none;
+        border-left: 3px solid transparent;
+        transition: $t3;
+        opacity: 0;
+        animation: productCatalogSlide .8s ease forwards;
+            &:hover {
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+            }
+            &.card-success {
+                border-color: lighten($main-color-accent, 10%);
+            }
+            & .product-image-container {
+                width: 100%;
+                height: 110px;
+                text-align: center;
+                padding: 10px 5px;
+                    & img {
+                        display: inline;
+                        max-width: 100%;
+                        height: 110px;
+                        
+                    }
+            }
+            & .product-name {
+                display: flex;
+                justify-content: center; align-items: center;
+                font-size: .8em;
+                text-align: center;
+                margin: 10px auto;
+                padding: 10px;
+                height: 50px;
+                max-width: 300px;
+            }
+            & .prod-confirm, & .fa-search {
+                position: absolute;
+                top: 10px;
+                padding: 8px;
+                transition: $t3;
+                    &.prod-confirm {
+                        left: 12px;
+                        color: lighten($main-color-accent, 10%);
+                        opacity: 0;
+                    }
+                    &.fa-search {
+                        right: 12px;
+                            &:hover {
+                                cursor: pointer;
+                                border-radius: 5px;
+                                background: rgb(241, 241, 241);
+                            }
+                    }
+            }
+            & button {
+                width: 90%;
+                height: 35px;
+                margin:0 auto;
+                margin-bottom: 15px;
+                padding: 8px;
+                max-width: 150px;
+                background: $main-color;
+                color: white;
+                border: none;
+                font-weight:400;
+                letter-spacing: 1px;
+                overflow: hidden;
+                transition: $t3;
+                position: relative;
+                @include flex(row, nowrap, center, center);
+                    &:active{
+                        transform: scale(.9);
+                    }
+                    &:hover {
+                        background: lighten($main-color-accent, 10%);
+                    }
+                    & .price-divider {
+                        margin: auto 10px;
+                    }
+                    & p.content {
+                        @include flex(row, nowrap, center, center);
+                        @include absoluteCenter;
+                        transition: $t3;
+                            & i {
+                                margin-right: 10px;
+                                color: white;
+                            }
+                    }
+                    & .default-content {
+                        width: 100%;
+                    }
+                    & .hidden {
+                        pointer-events: none;
+                        opacity: 0;
+                            &.default-content {
+                                margin-top: -30px;
+                                width: 100%;
+                            }
+                            &.adding-content {
+                                margin-left: -30px;
+                            }
+                            &.added-content {
+                                margin-top:-60px;
+                            }
+                    }
+                    & .btn-loader {
+                        width: 22px;
+                        margin-right: 10px;
+                        filter: $loader-color;
+                    }
+                    &.success {
+                        background: lighten($main-color-accent, 10%);
+                    }
+                    
+            }
+
+    }
+
+
+
+
+    @media (min-width: 450px) {
+        .auto-order-container .product-catalog-card {
+            width: 47%;
+        }
+    }

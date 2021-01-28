@@ -1,0 +1,39 @@
+.price-footer {
+    height: 40px;
+    width: 100%;
+    transition: .3s;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 475px;
+    background: lighten($main-color-accent, 35%);
+        &.open-price-ui {
+            height: 400px;
+        }
+        & .price-header {
+            background-image: linear-gradient(rgba(77, 131, 175, 0.493), rgba(123, 123, 156, 0.596)), url(../assets/dash-walls/wall1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background: $main-color-accent;
+            height: 40px;
+            width: 100%;
+            @include flex(row, nowrap, space-between, center);
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-size: .9em;
+            transition: .3s;
+                
+                &:hover {
+                    background: lighten($main-color-accent, 5%);
+                }
+                & i {
+                    margin-left: 10px;
+                    transition: .3s;
+                    &.active {
+                        transform: rotate(-180deg);
+                    }
+                }
+        }
+}

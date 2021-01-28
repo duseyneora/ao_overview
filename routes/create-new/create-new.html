@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font import *Source Sans Pro 3, 4, 6, and 7 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- icon import -->
+    <script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
+
+    <!-- custom compiled CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- title -->
+    <title>Prototype | User Dashboard</title>
+</head>
+<body>
+
+    <!-----------------------------------------
+                  OVERLAY CONTENT  
+    ------------------------------------------>
+    <div class="ao-overlay-container">
+        <div class="alert-message">
+            <!-- ... -->
+        </div>
+    </div> 
+    <!-----------------------------------------
+                END OVERLAY CONTENT 
+    ------------------------------------------>
+
+
+
+
+
+    <!-----------------------------------------
+                  MAIN CONTAINER
+    ------------------------------------------>
+
+    <main class="auto-order-container">
+
+
+        <!-- marketing content -->
+        <div class="marketing-banners-container">
+
+            <!-- offer-banner -->
+            <div class="marketing-banner">
+                <div class="carousel-container">
+                    <!-- controls -->
+                    <div class="controls">
+                        <p class="prev"><i class="fas fa-chevron-left"></i></p>
+                        <p class="next"><i class="fas fa-chevron-right"></i></p>
+                    </div>
+                    <!-- dots -->
+                    <div class="dots">
+                        <!-- ... -->
+                    </div>
+
+                    <!-- content -->
+                    <div class="carousel-content">
+                        <div class="carousel-item row">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="btn-link round2 cta default">Shop Now 1</button>
+                        </div>
+                        <div class="carousel-item col hidden-carousel-item">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="btn-link round2 cta default">Shop Now 2</button>
+                        </div>
+                        <div class="carousel-item row hidden-carousel-item">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="btn-link round2 cta default">Shop Now 3</button>
+                        </div>
+                        <div class="carousel-item col hidden-carousel-item">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="btn-link round2 cta default">Shop Now 4</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- offer-banner -->
+
+        </div> 
+        <!-- END marketing content -->
+
+        <!-- user dashboard -->
+        <div class="user-dashboard">
+            <div class="user-info-container">
+                <div class="user-picture-and-name">
+                    <img src="../../assets/placeholders/femaleplaceholder.png" alt="placeholder image for current user">
+                    <p class="name">...</p>
+                </div>
+                <div class="user-id">
+                    <p>...</p>
+                </div>
+            </div>
+            <div class="welcome-message">
+                <h3>Welcome!</h3>
+                <h4>Let's get a New Auto Order Started</h4>
+            </div>
+        </div>
+        <!-- END user dashboard -->
+
+        
+        <!-- product-catalog -->
+        <div class="product-catalog-container">
+            <!-- filtering procut catalog -->
+            <div class="filter-container">
+                <div class="filter-select-menu-container">
+                    <p class="filter-type">All Products</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="product-group-dropdown">
+                    <ul class="group-dropdown"></ul>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="product-catalog-content">
+                <!-- ... -->
+                <!-- <h2 class="all-products-title">Showing All Products:</h2> -->
+            </div>
+        </div>
+
+
+        <!-- price footer -->
+        <div class="price-footer">
+            <div class="price-header">
+                <p><span class="bolder">TOTAL</span>(USD)</p>
+                <p class="bolder total-price-display-text">$XX.00 <i class="fas fa-chevron-down"></i></p>
+            </div>
+        </div>
+        <!-- END price footer -->
+
+
+
+    </main>
+    <!-- END main -->
+    
+    <!-----------------------------------------
+                  END MAIN CONTAINER  
+    ------------------------------------------>
+    <script src="./js/product-data.js"></script>
+    <script src="./js/user-data.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>

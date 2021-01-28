@@ -1,0 +1,72 @@
+$neora-blue:#64B1Bc;
+$sky-blue:#B8DDE1;
+$happiness-orange:#FF9E15;
+$apple-green:#81BD41;
+$cool-gray:#A3A0AC;
+$ash-gray:#5C666F;
+$sailor-blue:#264B59;
+$holiday-purple: #8d4772;
+
+$success-green: rgb(111, 120, 150);
+
+
+// brand-fonts
+$prim-font:'Roboto', sans-serif;
+$ssp: 'Source Sans Pro', sans-serif;
+
+$bg-main: white;
+$bg-2: rgb(235, 235, 235);
+$bg-3: rgb(179, 179, 179);
+
+// themes for testing
+// default from mocks
+
+$main-color: #165E79;
+$main-color-accent: $happiness-orange;
+$loader-color: hue-rotate(180deg);
+
+$main-color: rgb(101, 109, 122);
+$main-color-accent: rgb(111, 120, 150);
+$loader-color: grayscale(.7) hue-rotate(20deg);
+
+
+
+
+
+
+$font-color: $ash-gray;
+
+
+// product cards
+$card-size: 100px;
+
+// global padding
+$default-padding: 10px 20px;
+//slate colors
+$slate: #E7F0F6;
+$slate-dark: #C1CBD3;
+$slate-light: #F4F9FC;
+
+//product card
+$readonly-card: 60px;
+//transition
+$t3: .3s;
+$t5: .5s;
+$t1s: 1s;
+
+
+$mobile-s: 320px;
+$mobile-m: 375px;
+$mobile-l: 425px;
+
+$tablet: 768px;
+
+$desktop: 1024px;
+
+
+$screen-s: 1200px;
+$screen-m: 1440px;
+$screen-l: 1600px;
+$screen-xl: 1900px;
+
+$max-screen: $screen-m;
