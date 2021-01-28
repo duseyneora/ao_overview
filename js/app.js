@@ -197,7 +197,7 @@ createNew.addEventListener('click', () => {
     overlay.innerHTML = '<img class="page-loader" src="./assets/loaders/GLdqYB2.gif">';
     //load to next route
     setTimeout(() => {
-        window.location.href = '../routes/create-new/index.html';
+        window.location.href = 'https://duseyneora.github.io/ao-create-new/';
     }, 2000)
     
 });
