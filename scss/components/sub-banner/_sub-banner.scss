@@ -3,22 +3,22 @@
     font-size: .7em;
     @include flex(row, nowrap, center, center);
     margin: 15px auto;
-    width: 92%;
+    width: 97%;
     background: white;
     border: none;
-    border-left: 3px solid $neora-blue;
+    border-left: 3px solid lighten($neora-blue, 10%);
     border-radius: 5px;
     position: relative;
         & h3 {
             padding: 12px 60px;
         }
         & .emph  {
-            color: $neora-blue;
+            color: lighten($neora-blue, 10%);
             text-transform: uppercase;
             margin: auto 5px;
         }
         & i {
-            color: $neora-blue;
+            color: lighten($neora-blue, 10%);
             margin-right: 25px;
             font-size: 1.4em;
             @include absoluteCenter;

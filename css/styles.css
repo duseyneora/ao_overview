@@ -499,10 +499,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 15px auto;
-  width: 92%;
+  width: 97%;
   background: white;
   border: none;
-  border-left: 3px solid #64B1Bc;
+  border-left: 3px solid #88c3cb;
   border-radius: 5px;
   position: relative;
 }
@@ -510,12 +510,12 @@ body {
   padding: 12px 60px;
 }
 .sub-banner-content .emph {
-  color: #64B1Bc;
+  color: #88c3cb;
   text-transform: uppercase;
   margin: auto 5px;
 }
 .sub-banner-content i {
-  color: #64B1Bc;
+  color: #88c3cb;
   margin-right: 25px;
   font-size: 1.4em;
   position: absolute;
@@ -531,7 +531,7 @@ body {
   border: 1px solid #efefef;
   border-left: 3px solid #ffbe62;
   border-radius: 5px;
-  width: 92%;
+  width: 97%;
   margin: auto;
   margin-top: 15px;
   position: relative;
