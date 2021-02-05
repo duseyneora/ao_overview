@@ -35,8 +35,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .auto-order-container {
@@ -45,6 +45,7 @@ body {
   margin: 0 auto;
   background: #eff0f3;
   min-height: 100vh;
+  transform: scale(0.9);
 }
 
 * li {
@@ -60,7 +61,7 @@ body {
 }
 
 .auto-order-container .loader {
-  filter: grayscale(0.7) hue-rotate(20deg);
+  filter: grayscale(0.6) hue-rotate(360deg);
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -70,7 +71,7 @@ body {
 
 .ao-overlay-container .page-loader {
   width: 75px;
-  filter: grayscale(0.7) hue-rotate(20deg);
+  filter: grayscale(0.6) hue-rotate(360deg);
 }
 
 .auto-order-container .disabled {
@@ -263,10 +264,10 @@ body {
   transition: 0.6s;
 }
 .auto-order-container .marketing-banner .carousel-content .carousel-item:nth-child(even) {
-  background: #ece2ea;
+  background: #e8edef;
 }
 .auto-order-container .marketing-banner .carousel-content .carousel-item:nth-child(even) button {
-  background: rgba(111, 120, 150, 0.7);
+  background: rgba(22, 94, 121, 0.7);
 }
 .auto-order-container .marketing-banner .carousel-content .carousel-item.col {
   display: flex;
@@ -293,18 +294,17 @@ body {
   text-align: center;
 }
 .auto-order-container .marketing-banner .carousel-content .carousel-item button {
-  background: rgba(111, 120, 150, 0.7);
+  background: rgba(22, 94, 121, 0.7);
   border: none;
   z-index: 15;
 }
 .auto-order-container .marketing-banner .carousel-content .carousel-item button:hover {
-  background: #6f7896;
+  background: #165e79;
 }
 
 .auto-order-container .user-dashboard {
   padding: 20px;
-  background: #656d7a;
-  background-image: linear-gradient(rgba(77, 131, 175, 0.493), rgba(123, 123, 156, 0.596)), url(../assets/dash-walls/wall1.jpg);
+  background: #165E79;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -336,7 +336,9 @@ body {
   letter-spacing: 1px;
 }
 .auto-order-container .user-info-container .user-id {
-  font-size: 0.8em;
+  font-size: 0.9em;
+  margin-right: 35px;
+  opacity: 0.8;
 }
 
 .auto-order-container .ao-select-container {
@@ -349,7 +351,7 @@ body {
 }
 .auto-order-container .ao-select-container .auto-order-count {
   color: white;
-  font-size: 0.8em;
+  font-size: 0.9em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -357,8 +359,9 @@ body {
   align-items: center;
 }
 .auto-order-container .ao-select-container .auto-order-count .count {
-  background: #6f7896;
-  background: #596079;
+  color: #5C666F;
+  background: #165E79;
+  background: white;
   height: 30px;
   width: 30px;
   margin: 10px auto 5px 10px;
@@ -368,7 +371,6 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 1.1em;
 }
 .auto-order-container .ao-select-container .custom-select-container {
   background: white;
@@ -386,11 +388,11 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-.auto-order-container .ao-select-container .custom-select-container .order-item p {
+.auto-order-container .ao-select-container .custom-select-container .order-item p, .auto-order-container .ao-select-container .custom-select-container .order-item i {
   pointer-events: none;
 }
 .auto-order-container .ao-select-container .custom-select-container .viewing-order {
-  color: #6f7896;
+  color: #165E79;
   opacity: 0.6;
   margin-right: 10px;
 }
@@ -439,7 +441,7 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background: rgba(111, 120, 150, 0.5);
+  background: rgba(22, 94, 121, 0.5);
   border-radius: 3px;
   color: white;
   transition: 0.3s;
@@ -448,14 +450,14 @@ body {
 .auto-order-container .ao-select-container .custom-select-container li.create-new {
   text-align: center;
   padding: 10px;
-  background: #7e86a1;
+  background: #1a6f8f;
   width: 100%;
   color: white;
   margin: 10px auto 0 auto;
   border-radius: 25px;
 }
 .auto-order-container .ao-select-container .custom-select-container li.create-new:hover {
-  background: #6f7896;
+  background: #165E79;
 }
 .auto-order-container .ao-select-container .custom-select-container li.create-new p {
   text-align: center;
@@ -465,7 +467,24 @@ body {
   background: #f1f1f1;
 }
 .auto-order-container .ao-select-container .custom-select-container li:hover .product-count {
-  background: #6f7896;
+  background: #165E79;
+}
+
+.sub-banner-content {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.7em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background: white;
+}
+.sub-banner-content .emph {
+  color: #165E79;
+  text-transform: uppercase;
 }
 
 .auto-order-overview {
@@ -542,7 +561,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   padding: 10px;
   font-size: 0.7em;
@@ -574,6 +593,7 @@ body {
   font-size: 1.2em;
   font-weight: 600;
   padding-right: 5px;
+  margin-top: 10px;
 }
 .auto-order-container .product-card .price .outofstock-copy {
   color: #FF9E15;
@@ -711,41 +731,38 @@ body {
   border: 1px solid transparent;
   border-left-color: #d1d1d1;
   transition: 0.3s;
-  background-color: #6f7896;
+  background-color: #165E79;
   color: white;
   font-weight: 400;
   letter-spacing: 1px;
 }
 .auto-order-container .auto-order-settings .coupon-input-container button:hover {
-  background-color: #7e86a1;
+  background-color: #1a6f8f;
 }
 
 .price-footer {
-  height: 40px;
+  height: 45px;
   width: 100%;
   transition: 0.3s;
   position: fixed;
   bottom: 0;
   width: 100%;
   max-width: 475px;
-  background: #d6d9e1;
+  background: #e8ecef;
 }
 .price-footer.open-price-ui {
   height: 400px;
 }
 .price-footer .price-header {
-  background-image: linear-gradient(rgba(77, 131, 175, 0.493), rgba(123, 123, 156, 0.596)), url(../assets/dash-walls/wall1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background: #6f7896;
-  height: 40px;
+  background: #165E79;
+  height: 45px;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px 25px;
   color: white;
   cursor: pointer;
   letter-spacing: 1px;
@@ -753,7 +770,7 @@ body {
   transition: 0.3s;
 }
 .price-footer .price-header:hover {
-  background: #7e86a1;
+  background: #1a6f8f;
 }
 .price-footer .price-header i {
   margin-left: 10px;

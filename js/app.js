@@ -181,7 +181,8 @@ currentUser[0].orders.forEach((order) => {
     orderSelections.innerHTML += 
     `<li class="order-item">
         <p class="order-number-copy">${order.order_id}</p>
-        <p class="product-count">${order.products.length}</p>
+        <p>Next Ship Date: Feb ${order.ship_day}, 2021</p>
+        <i class="fas fa-chevron-right"></i>
     </li>
     `
 });
@@ -198,7 +199,7 @@ createNew.addEventListener('click', () => {
     //load to next route
     setTimeout(() => {
         // window.location.href = 'https://duseyneora.github.io/ao-create-new/';
-        window.location.href = './routes/create-new/index.html22222';
+        window.location.href = '../ao-create-new/index.html';
     }, 2000)
     
 });

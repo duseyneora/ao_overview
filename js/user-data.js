@@ -50,7 +50,7 @@ const currentUser = [
             {
                 order_id: "1234567",
                 order_name: '',
-                ship_day: 15,
+                ship_day: 22,
                 ship_frequency: 'monthly',
                 products: [
                     {
@@ -74,7 +74,7 @@ const currentUser = [
             {
                 order_id: "7654321",
                 order_name: '',
-                ship_day: 15,
+                ship_day: 3,
                 ship_frequency: 'monthly',
                 products: [
                     {

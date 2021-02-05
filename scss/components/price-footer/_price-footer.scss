@@ -1,24 +1,21 @@
 .price-footer {
-    height: 40px;
+    height: 45px;
     width: 100%;
     transition: .3s;
     position: fixed;
     bottom: 0;
     width: 100%;
     max-width: 475px;
-    background: lighten($main-color-accent, 35%);
+    background: rgb(232, 236, 239);
         &.open-price-ui {
             height: 400px;
         }
         & .price-header {
-            background-image: linear-gradient(rgba(77, 131, 175, 0.493), rgba(123, 123, 156, 0.596)), url(../assets/dash-walls/wall1.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background: $main-color-accent;
-            height: 40px;
+            background: $main-color;
+            height: 45px;
             width: 100%;
             @include flex(row, nowrap, space-between, center);
-            padding: 10px;
+            padding: 15px 25px;
             color: white;
             cursor: pointer;
             letter-spacing: 1px;

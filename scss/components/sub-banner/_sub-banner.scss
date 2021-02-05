@@ -1,0 +1,12 @@
+.sub-banner-content {
+    padding: $default-padding;
+    text-align: center;
+    font-size: .7em;
+    @include flex(row, nowrap, center, center);
+    height: 40px;
+    background: white;
+        & .emph  {
+            color: $main-color;
+            text-transform: uppercase;
+        }
+}
