@@ -1,0 +1,25 @@
+.out-of-stock-alert {
+    background: lighten($ash-gray, 60%);
+    padding: 12px 20px;
+    border: 1px solid rgb(239, 239, 239);
+    border-left: 3px solid lighten($happiness-orange, 15%);
+    border-radius: 5px;
+    width: 92%;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+        & p {
+            display: block;
+            margin: auto;
+            max-width: 85%;
+            font-weight: 00;
+            font-size: .9em;
+            line-height: 20px;
+        }
+        & i {
+            @include absoluteCenter;
+            left: 25px;
+            font-size: 1.2em;
+            color: lighten($happiness-orange, 15%);
+        }
+}

@@ -10,6 +10,8 @@
 .auto-order-container .user-info-container {
     color: white;
     @include flex(row, nowrap, space-between, center);
+    max-width: 500px;
+    margin: auto;
         // user picture and name
         & .user-picture-and-name {
             @include flex(row, nowrap, flex-start, center);
@@ -28,7 +30,7 @@
         // user id
         & .user-id {
             font-size: .9em;
-            margin-right: 35px;
+            // margin-right: 35px;
             opacity: .8;
         }
 }
@@ -37,6 +39,7 @@
 .auto-order-container .ao-select-container {
     margin: 5px auto 0px;
     @include flex(column, nowrap, flex-end, flex-end);
+    max-width: 500px;
         & .auto-order-count {
            color: white;
             font-size: .9em;
@@ -55,6 +58,7 @@
         & .custom-select-container {
             background: white;
             @include size(40px, 100%);
+            max-width: 500px;
             @include flex(row, nowrap, space-between, center);
             margin: 5px auto;
             padding: $default-padding;
@@ -143,3 +147,5 @@
                 }
         }
 }
+
+

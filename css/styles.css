@@ -41,7 +41,7 @@ body {
 
 .auto-order-container {
   width: 100%;
-  max-width: 475px;
+  max-width: 1200px;
   margin: 0 auto;
   background: #eff0f3;
   min-height: 100vh;
@@ -315,6 +315,8 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  max-width: 500px;
+  margin: auto;
 }
 .auto-order-container .user-info-container .user-picture-and-name {
   display: flex;
@@ -336,7 +338,6 @@ body {
 }
 .auto-order-container .user-info-container .user-id {
   font-size: 0.9em;
-  margin-right: 35px;
   opacity: 0.8;
 }
 
@@ -347,6 +348,7 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: flex-end;
+  max-width: 500px;
 }
 .auto-order-container .ao-select-container .auto-order-count {
   color: white;
@@ -376,6 +378,7 @@ body {
   background: white;
   height: 40px;
   width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -489,6 +492,57 @@ body {
   text-transform: uppercase;
 }
 
+.out-of-stock-alert {
+  background: #feffff;
+  padding: 12px 20px;
+  border: 1px solid #efefef;
+  border-left: 3px solid #ffbe62;
+  border-radius: 5px;
+  width: 92%;
+  margin: auto;
+  margin-top: 15px;
+  position: relative;
+}
+.out-of-stock-alert p {
+  display: block;
+  margin: auto;
+  max-width: 85%;
+  font-weight: 0;
+  font-size: 0.9em;
+  line-height: 20px;
+}
+.out-of-stock-alert i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 25px;
+  font-size: 1.2em;
+  color: #ffbe62;
+}
+
+.section-split {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.section-split div {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section-split {
+    flex-direction: row;
+  }
+  .section-split .auto-order-overview {
+    order: 2;
+  }
+  .section-split .auto-order-settings {
+    order: 1;
+  }
+}
 .auto-order-overview {
   padding: 25px 20px;
 }
@@ -605,6 +659,7 @@ body {
 }
 
 .auto-order-container .auto-order-settings {
+  margin-top: 12px;
   padding: 25px 20px;
   transition: 0.3s;
 }
@@ -749,7 +804,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-width: 475px;
+  max-width: 1200px;
   background: #e8ecef;
 }
 .price-footer.open-price-ui {
