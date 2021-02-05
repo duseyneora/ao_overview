@@ -9,11 +9,11 @@
 @media (min-width: 768px) {
     .section-split {
         flex-direction: row;
-            & .auto-order-overview {
-                order: 2;
-            }
-            & .auto-order-settings {
-                order: 1;
-            }
+            // & .auto-order-overview {
+            //     order: 2;
+            // }
+            // & .auto-order-settings {
+            //     order: 1;
+            // }
     }
 }

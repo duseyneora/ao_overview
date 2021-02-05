@@ -29,6 +29,7 @@ html {
 }
 
 body {
+  background: #eff0f3;
   height: 100%;
   width: 100%;
   color: #5C666F;
@@ -301,6 +302,20 @@ body {
   background: #165e79;
 }
 
+@media (min-width: 1024px) {
+  .auto-order-container .marketing-banner {
+    height: 240px;
+    width: 100%;
+  }
+
+  .auto-order-container .carousel-container {
+    height: 240xp;
+  }
+
+  .auto-order-container .marketing-banner .carousel-container {
+    height: 240px;
+  }
+}
 .auto-order-container .user-dashboard {
   padding: 20px;
   background: #165E79;
@@ -476,7 +491,6 @@ body {
 }
 
 .sub-banner-content {
-  padding: 10px 20px;
   text-align: center;
   font-size: 0.7em;
   display: flex;
@@ -484,12 +498,31 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  margin: 15px auto;
+  width: 92%;
   background: white;
+  border: none;
+  border-left: 3px solid #64B1Bc;
+  border-radius: 5px;
+  position: relative;
+}
+.sub-banner-content h3 {
+  padding: 12px 60px;
 }
 .sub-banner-content .emph {
-  color: #165E79;
+  color: #64B1Bc;
   text-transform: uppercase;
+  margin: auto 5px;
+}
+.sub-banner-content i {
+  color: #64B1Bc;
+  margin-right: 25px;
+  font-size: 1.4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 25px;
 }
 
 .out-of-stock-alert {
@@ -535,12 +568,6 @@ body {
 @media (min-width: 768px) {
   .section-split {
     flex-direction: row;
-  }
-  .section-split .auto-order-overview {
-    order: 2;
-  }
-  .section-split .auto-order-settings {
-    order: 1;
   }
 }
 .auto-order-overview {

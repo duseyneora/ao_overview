@@ -10,10 +10,9 @@ html {
 }
 
 body {
+    background: rgb(239, 240, 243);
     @include size(100%, 100%);
     color: $font-color;
-
-    // temporary
     @include flex(row, nowrap, flex-start, flex-start);
 }
 

@@ -76,3 +76,15 @@
                 }
         }
 }
+
+@media (min-width: 1024px) {
+    .auto-order-container .marketing-banner {
+        @include size(240px, 100%);
+    }
+    .auto-order-container .carousel-container {
+        height: 240xp;
+    }
+    .auto-order-container .marketing-banner .carousel-container {
+        height: 240px;
+    }
+}

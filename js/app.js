@@ -30,10 +30,10 @@ function displayPrimaryOrderOnLoad() {
             card.classList.remove('shrink');
         })
 
-        selectActiveOption.innerHTML = `<i class="viewing-order fas fa-eye"></i> ${currentUser[0].orders[0].order_id}`
+        selectActiveOption.innerHTML = `<i class="viewing-order fas fa-eye"></i> ${currentUser[0].orders[2].order_id}`
         selectActiveOption.parentNode.classList.remove('disabled');
         productsContainer_current.innerHTML = ''; 
-        currentUser[0].orders[0].products.forEach((item) => {
+        currentUser[0].orders[2].products.forEach((item) => {
             if (item.inStock) {
                 productsContainer_current.innerHTML += 
                 `
