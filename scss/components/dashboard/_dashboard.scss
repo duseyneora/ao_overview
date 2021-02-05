@@ -42,11 +42,11 @@
             font-size: .9em;
             @include flex(row, nowrap, center, center);
                 & .count {
-                    
+                    font-size: .9em;
                     color: $ash-gray;
                     background: $main-color-accent;
                     background: white;
-                    @include simpleSize(30px);
+                    @include simpleSize(20px);
                     margin: 10px auto 5px 10px;
                     @include flex(row, nowrap, center, center);
                     border-radius: 50%;
@@ -97,11 +97,12 @@
                         }
                 }
                 & li {
-                    padding: 5px 10px;
+                    padding: 10px;
                     border-radius: 3px;
                     transition: $t3;
                     font-size: .9em;
                     @include flex(row, nowrap, space-between, center);
+                    border-bottom: 1px solid rgb(219, 219, 219);
                         & .product-count {
                             display: block;
                             @include simpleSize(25px);
@@ -111,17 +112,19 @@
                             color: white;
                             transition: $t3;
                             font-size: .8em;
+                            
                         }
                         &.create-new {
                             text-align: center;
                             padding: 10px;
-                            background: lighten($main-color-accent, 5%);
+                            background: $happiness-orange;
                             width: 100%;
                             color: white;
                             margin: 10px auto 0 auto;
                             border-radius: 25px;
+                            border: none;
                                 &:hover {
-                                    background: $main-color-accent;
+                                    background: lighten($happiness-orange, 5%);
                                    
                                 }
                                 & p {
