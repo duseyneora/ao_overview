@@ -45,7 +45,6 @@ body {
   margin: 0 auto;
   background: #eff0f3;
   min-height: 100vh;
-  transform: scale(0.9);
 }
 
 * li {
