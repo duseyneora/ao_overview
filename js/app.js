@@ -198,7 +198,7 @@ createNew.addEventListener('click', () => {
     //load to next route
     setTimeout(() => {
         // window.location.href = 'https://duseyneora.github.io/ao-create-new/';
-        window.location.href = './routes/create-new/index.html';
+        window.location.href = './routes/create-new/index.html22222';
     }, 2000)
     
 });

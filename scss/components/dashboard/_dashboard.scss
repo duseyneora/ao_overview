@@ -58,6 +58,9 @@
             border-radius: 3px;
             cursor: pointer;
             transition: $t3;
+                & .order-item p {
+                    pointer-events: none;
+                }
                 & .viewing-order {
                     color: $main-color-accent;
                     opacity: 0.6;

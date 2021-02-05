@@ -386,6 +386,9 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+.auto-order-container .ao-select-container .custom-select-container .order-item p {
+  pointer-events: none;
+}
 .auto-order-container .ao-select-container .custom-select-container .viewing-order {
   color: #6f7896;
   opacity: 0.6;
