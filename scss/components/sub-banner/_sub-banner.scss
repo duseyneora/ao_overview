@@ -3,7 +3,7 @@
     font-size: .7em;
     @include flex(row, nowrap, center, center);
     margin: 15px auto;
-    width: 97%;
+    width: 100%;
     background: white;
     border: none;
     border-left: 3px solid lighten($neora-blue, 10%);

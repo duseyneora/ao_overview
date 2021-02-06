@@ -34,13 +34,13 @@
         transform: scale(1.02);
     }
     & .outofstock-icon {
-        color: $happiness-orange;
+        color: lighten($happiness-orange, 15%);
         font-size: 1em;
         margin-left: 5px;
     }
     &.outofstock-card {
         // opacity: .7!important;
-        border-color: rgba($happiness-orange, 0.5);
+        border-color:lighten($happiness-orange, 15%);
     }
     & .card-child {
         @include simpleSize(100%);
@@ -87,10 +87,11 @@
         margin-top: 10px;
     }
     & .outofstock-copy {
-        color: $happiness-orange;
+        color: lighten($happiness-orange, 15%);
         position: absolute;
         bottom: 10px;
         right: 15px;
+        font-size: .9em;
     }
 }
 }
