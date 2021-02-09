@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
 
     <!-- custom compiled CSS -->
+    <link rel="stylesheet" href="./css-reset/main.css">
+    <link rel="stylesheet" href="./css-reset/css-reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 
     <!-- title -->
@@ -61,20 +63,22 @@
                     <!-- content -->
                     <div class="carousel-content">
                         <div class="carousel-item row">
+                            <h1>1</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="btn-link round2 cta default">Shop Now 1</button>
                         </div>
-                        <div class="carousel-item col hidden-carousel-item">
+                        
+                        <div class="carousel-item row hidden-carousel-item">
+                            <h1>2</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="btn-link round2 cta default">Shop Now 2</button>
+                            
                         </div>
                         <div class="carousel-item row hidden-carousel-item">
+                            <h1>3</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="btn-link round2 cta default">Shop Now 3</button>
                         </div>
-                        <div class="carousel-item col hidden-carousel-item">
+                        <div class="carousel-item row hidden-carousel-item">
+                            <h1>4</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <button class="btn-link round2 cta default">Shop Now 4</button>
                         </div>
                     </div>
                 </div>
@@ -112,18 +116,21 @@
         <!-- END user dashboard -->
 
         <div class="sub-banner-content">
-            <i class="fas fa-certificate"></i>
-            <h3>FPO Banner - <span class="emph">spend $17 more to receive your free product</span> while supplies last!</h3>
-        </div>
-
-        <div class="out-of-stock-alert">
-            <i class="fas fa-exclamation-circle outofstock-icon"></i>
-            <p>One or more of your products are currently out of stock. However, if you already have it on your Smart Shop recurring order you will not be impacted and your item(s) will ship as expected.</p>
+            <div class="banner-content marketing">
+                <i class="fas fa-exclamation"></i>
+                <p>FPO Banner - <span class="bolder">Spend $17 more to receive your free product</span> while supplies last!</p>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="banner-content warning">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>One or more of your products are currently out of stock. However, if you already have it on your Smart Shop recurring order you will not be impacted and your item(s) will ship as expected.</p>
+                <i class="fas fa-times"></i>
+            </div>
         </div>
 
         <div class="section-split">
             <!-- current order overview -->
-            <div class="auto-order-overview">
+            <div class="auto-order-overview split-content">
                 <div class="header">
                     <h4>Products</h4>
                     <button class="btn-link round2 default">Edit</button>
@@ -136,13 +143,13 @@
             <!-- END current order overview -->
 
             <!-- order settings -->
-            <div class="auto-order-settings">
+            <div class="auto-order-settings split-content">
                 <div class="header">
                     <h4>Subscription Settings</h4>
                     <i class="fas active fa-angle-down select-arrow"></i>
                 </div>
                 <div class="ao-settings-card-container hide">
-                    <div class="card shrink">
+                    <div class="ao-settings-card shrink">
                         <div class="group">
                             <h4>Your Next Ship Date</h4>
                             <p class="ship-date-copy">Monday, Jan 18</p>
@@ -150,14 +157,14 @@
                         </div>
                         <button class="btn-link round2 default">Edit</button>
                     </div>
-                    <div class="card shrink">
+                    <div class="ao-settings-card shrink">
                         <div class="group half">
                             <h4>Shipping Address</h4>
                             <p class="shipping-address-copy">1234 Test Lane, Addison, TX 75001</p>
                         </div>
                         <button class="btn-link round2 default">Edit</button>
                     </div>
-                    <div class="card shrink">
+                    <div class="ao-settings-card shrink">
                         <div class="group half">
                             <h4>Payment Method</h4>
                             <p class="payment-method-copy">
@@ -166,12 +173,13 @@
                         </div>
                         <button class="btn-link round2 default">Edit</button>
                     </div>
-                </div>
-                <button class="coupon-btn">Have a coupon or promo code?</button>
+                    <button class="coupon-btn">Have a coupon or promo code?</button>
                 <form class="coupon-input-container">
                     <input type="text">
                     <button type="submit" class="default btn-link round2">Apply</button>
                 </form>
+                </div>
+                
             </div>
             <!-- END order settings -->
         </div>

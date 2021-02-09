@@ -34,7 +34,7 @@
         opacity: 0;
         pointer-events: none;
     }
-    & .card {
+    & .ao-settings-card {
         @include size(100px, 100%);
         background: white;
         transition: $t3;
@@ -51,9 +51,12 @@
                 height: 50%;
             }
             & p {
-                margin-top: 10px;
+                // margin-top: 10px;
                 font-size: .8em;
                 color: gray;
+            }
+            & h4 {
+                font-weight: 600;
             }
         }
         &.shrink {

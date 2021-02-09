@@ -1,0 +1,31 @@
+
+* button {
+    text-transform: initial;
+    letter-spacing: initial;
+    font-size: .9em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+* a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+button, a.button {
+    padding: 0;
+}
+* p {
+    margin: 0;
+    line-height: initial;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+* input {
+    background: initial;
+    background: white!important;
+}
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}

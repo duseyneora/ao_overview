@@ -25,7 +25,7 @@ function displayPrimaryOrderOnLoad() {
 
         settingsContainer.classList.remove('hide');
         settingsArrow.classList.toggle('active');
-        let settingsCard = document.querySelectorAll('.ao-settings-card-container .card');
+        let settingsCard = document.querySelectorAll('.ao-settings-card-container .ao-settings-card');
         settingsCard.forEach((card) => {
             card.classList.remove('shrink');
         })
@@ -33,7 +33,7 @@ function displayPrimaryOrderOnLoad() {
         selectActiveOption.innerHTML = `<i class="viewing-order fas fa-eye"></i> ${currentUser[0].orders[2].order_id}`
         selectActiveOption.parentNode.classList.remove('disabled');
         productsContainer_current.innerHTML = ''; 
-        currentUser[0].orders[0].products.forEach((item) => {
+        currentUser[0].orders[1].products.forEach((item) => {
             if (item.inStock) {
                 productsContainer_current.innerHTML += 
                 `
@@ -63,8 +63,8 @@ function displayPrimaryOrderOnLoad() {
                     <p class="qty-copy">Qty: <span class="qty-amount">${item.qty}</span></p>
                 </div>
                 <div class="price card-child">
-                    <p class="price-copy">$${item.ao_price} <i class="fas fa-exclamation-circle outofstock-icon"></i></p>
-                    <p class="outofstock-copy">Out of Stock</p>
+                    <p class="price-copy">$${item.ao_price} </p>
+                    <p class="outofstock-copy">Out of Stock <i class="fas fa-exclamation-circle outofstock-icon"></i></p>
                 </div>
             </div>
             `
@@ -252,7 +252,7 @@ function updateProductCards(e, index) {
 
     settingsContainer.classList.add('hide');
     settingsArrow.classList.toggle('active');
-        let settingsCard = document.querySelectorAll('.ao-settings-card-container .card');
+        let settingsCard = document.querySelectorAll('.ao-settings-card-container .ao-settings-card');
         settingsCard.forEach((card) => {
             card.classList.add('shrink');
         })
@@ -263,7 +263,7 @@ function updateProductCards(e, index) {
 
         settingsContainer.classList.remove('hide');
         settingsArrow.classList.toggle('active');
-        let settingsCard = document.querySelectorAll('.ao-settings-card-container .card');
+        let settingsCard = document.querySelectorAll('.ao-settings-card-container .ao-settings-card');
         settingsCard.forEach((card) => {
             card.classList.remove('shrink');
         })
@@ -326,7 +326,7 @@ const settingsArrow = settingsSectionHeader.querySelector('i');
 settingsSectionHeader.addEventListener('click', () => {
     settingsArrow.classList.toggle('active');
     settingsContainer.classList.toggle('hide');
-        let settingsCard = document.querySelectorAll('.ao-settings-card-container .card');
+        let settingsCard = document.querySelectorAll('.ao-settings-card-container .ao-settings-card');
         settingsCard.forEach((card) => {
             card.classList.toggle('shrink');
         });

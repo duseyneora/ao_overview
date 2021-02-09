@@ -1,27 +1,44 @@
 .sub-banner-content {
-    text-align: center;
-    font-size: .7em;
-    @include flex(row, nowrap, center, center);
-    margin: 15px auto;
-    width: 100%;
-    background: white;
-    border: none;
-    border-left: 3px solid lighten($neora-blue, 10%);
-    border-radius: 5px;
-    position: relative;
-        & h3 {
-            padding: 12px 60px;
-        }
-        & .emph  {
-            color: lighten($neora-blue, 10%);
-            text-transform: uppercase;
-            margin: auto 5px;
-        }
-        & i {
-            color: lighten($neora-blue, 10%);
-            margin-right: 25px;
-            font-size: 1.4em;
-            @include absoluteCenter;
-            left:25px;
+    padding: $default-padding;
+    margin-top: 15px;
+        .banner-content {
+            background: white;
+            border-radius: 3px;
+            position: relative;
+            border: 0;
+            border-left: 5px solid;
+            padding: 15px;
+            margin: 15px auto;
+            width: 100%;
+            @include flex(row, nowrap, space-between, center);
+            
+                &:first-child {
+                    margin-top: 0;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                & i {
+                    font-size: 1.1em;
+                        &:last-child {
+                            opacity: .5;
+                            cursor: pointer;
+                        }
+                }
+                &.warning {
+                    border-color: lighten($happiness-orange, 15%);
+                        & i:first-child {
+                            color: lighten($happiness-orange, 15%);
+                        }
+                }
+                &.marketing {
+                    border-color: lighten($neora-blue, 15%);
+                        & i:first-child {
+                            color:  lighten($neora-blue, 15%);
+                        }
+                }
+                & p {
+                    padding: 0 35px;
+                }
         }
 }

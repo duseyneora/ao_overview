@@ -48,11 +48,8 @@
                                     background: rgba($main-color-accent, 0.7);
                                 }
                         }
-                        &.col {
-                            @include flex(column, nowrap, space-evenly, center);
-                        }
                         &.row {
-                            @include flex(row, nowrap, space-evenly, center);
+                            @include flex(row, nowrap, center, center);
                         }
                         &.hidden-carousel-item {
                             margin-left: -100%;

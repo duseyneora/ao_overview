@@ -1,7 +1,10 @@
 .section-split {
-    @include flex(column, nowrap, flex-start, flex-start);
-        & div {
+    @include flex(column, nowrap, center, flex-start);
+        & .split-content {
             width: 100%;
+                & .group {
+                    margin: 0;
+                }
         }
         
 }
